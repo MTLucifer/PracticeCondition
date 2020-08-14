@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 1</title>
+</head>
+<body>
+<p>Nhập vào số a<input type="number" id="a" value=""></p>
+<p>Nhập vào số <input type="number" id="b" value=""></p>
+<input type="button" id="check" onclick="check()" value="Kiểm tra">
+<span id="result"></span>
+<script>
+    function check() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        if (a % b === 0) {
+            document.getElementById('result').innerText = "Hai số chia hết cho nhau"
+        } else {
+            alert("Hai số không chia hết cho nhau")
+        }
+    }
+</script>
+</body>
+</html>
