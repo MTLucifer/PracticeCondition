@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<p>Nhập điểm bài kiểm tra:<input type="number" id="test"></p>
+<p>Nhập điểm thi giữa kỳ:<input type="number" id="midterm"></p>
+<p>Nhập điểm thi cuối kỳ:<input type="number" id="finale"></p>
+<button onclick="check()">Kiểm tra</button>
+<script>
+    let test = +document.getElementById('test').value;
+    let midterm = +document.getElementById('midterm').value;
+    let finale = +document.getElementById('finale').value;
+    let avarge = ((test + midterm + finale) / 3);
+    function check() {
+        if (avarge > 10){
+            alert("Nhập sai dữ liệu")
+        }
+        else if (avarge >= 8.5){
+            alert("Học sinh có học lực giỏi")
+        }
+        else if (avarge >= 7){
+            alert("Học sinh có học lực khá")
+        }
+        else if (avarge >= 5){
+            alert("Học sinh có học lực trung bình")
+        }
+    }
+</script>
+</body>
+</html>

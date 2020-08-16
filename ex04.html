@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4</title>
+</head>
+<body>
+<p>Nhập số đầu tiên:<input type="number" id="a"></p>
+<p>Nhập số thứ hai:<input type="number" id="b"></p>
+<p>Nhập số thứ ba:<input type="number" id="c"></p>
+<button onclick="check()">Kiểm tra</button>
+<script>
+    let a = document.getElementById('a').value;
+    let b = document.getElementById('b').value;
+    let c = document.getElementById('c').value;
+    function check() {
+        if (a > b) {
+            if (a > c) {
+                alert(a + " là số lơn nhất")
+            } else {
+                alert(c + " Là số lớn nhất")
+            }
+        } else if (a > c) {
+            alert(b + " Là số lớn nhất")
+        } else if (b > c) {
+            alert(b + " Là số lớn nhất")
+        } else {
+            alert(c + " Là số lớn nhất")
+        }
+    }
+</script>
+</body>
+</html>

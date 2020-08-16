@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 7</title>
+</head>
+<body>
+<span id="result"> </span>
+<script>
+    let number = +prompt("Nhập số phút gọi:")
+    if (number<=5) {
+        document.getElementById('result').innerText = "Thành tiền: " + (number*200)
+    }
+    else if (number>5){
+        document.getElementById('result').innerText = "Thành tiền: " + (1000+(number-5)*600);
+    }
+</script>
+</body>
+</html>

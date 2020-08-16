@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<span id="result"></span>
+<script>
+    let number = parseInt(prompt("Nhập một số: "));
+    if (number>0){
+        document.getElementById('result').innerText = "Số lớn hơn 0"
+    }
+    else if (number<0){
+        document.getElementById('result').innerText = "Số nhỏ hơn 0"
+    }
+    else {
+        document.getElementById('result').innerText = "Đây là số 0"
+    }
+</script>
+</body>
+</html>
